@@ -253,6 +253,8 @@ footer a {
     transition: color 0.3s ease;
 }
 
+
+
 footer a:hover {
     text-decoration: underline;
 }
@@ -297,7 +299,7 @@ footer a:hover {
     transition: color 0.3s ease;
 }
 
-.modal p {
+.modal p, a {
     margin-bottom: 1rem;
     color: var(--text-color);
     transition: color 0.3s ease;

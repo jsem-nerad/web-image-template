@@ -1,29 +1,33 @@
-// Theme switcher functionality
-const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+// Theme toggle functionality
+const themeToggle = document.getElementById('themeToggle');
+const themeIcon = themeToggle.querySelector('.theme-toggle-icon');
 
-// Check for saved theme preference
-const currentTheme = localStorage.getItem('theme');
-if (currentTheme) {
-    document.documentElement.setAttribute('data-theme', currentTheme);
+// Check for saved theme preference or use device preference
+const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+const savedTheme = localStorage.getItem('theme');
+
+if (savedTheme === 'dark' || (!savedTheme && prefersDarkScheme.matches)) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    themeIcon.textContent = '☀️';
+} else {
+    document.documentElement.setAttribute('data-theme', 'light');
+    themeIcon.textContent = '🌙';
+}
+
+// Toggle theme when button is clicked
+themeToggle.addEventListener('click', function() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
     
     if (currentTheme === 'dark') {
-        toggleSwitch.checked = true;
-    }
-}
-
-// Switch theme function
-function switchTheme(e) {
-    if (e.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark');
-    } else {
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light');
+        themeIcon.textContent = '🌙';
+    } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+        themeIcon.textContent = '☀️';
     }
-}
-
-// Event listener for theme switch
-toggleSwitch.addEventListener('change', switchTheme, false);
+});
 
 
 document.addEventListener('DOMContentLoaded', function() {

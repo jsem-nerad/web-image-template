@@ -2,7 +2,7 @@
 
 
   <p align="center">
-    <img src="https://raw.githubusercontent.com/jsem-nerad/wis.js/refs/heads/main/images/logo.png" style="width: 30%; height: auto;">
+    <img src="https://raw.githubusercontent.com/jsem-nerad/wis.js/refs/heads/main/images/icon.png" style="width: 30%; height: auto;">
     <br />
     A 
     <br />
@@ -26,21 +26,21 @@ There are 4 predefined points on the base image, that are the corners of the pos
 To use this in your code, you will need the wis.js file. Then, put those things into your html file:
 
 '''xml
-<button id="saveButton" class="save-button">
-    <span class="button-text">Save Result</span>
-</button>
+  <button id="saveButton" class="save-button">
+      <span class="button-text">Save Result</span>
+  </button>
 '''
 '''xml
-<input type="file" id="imageUpload" accept="image/*">
-<p class="file-name" id="fileName">No file chosen</p>
+  <input type="file" id="imageUpload" accept="image/*">
+  <p class="file-name" id="fileName">No file chosen</p>
 '''
 
 '''xml
-<div class="canvas-container" id="canvasContainer">
-    <canvas id="resultCanvas"></canvas>
-    <div class="loading-spinner" id="loadingSpinner">
-        <div class="spinner"></div>
-    </div>
-</div>
+  <div class="canvas-container" id="canvasContainer">
+      <canvas id="resultCanvas"></canvas>
+      <div class="loading-spinner" id="loadingSpinner">
+          <div class="spinner"></div>
+      </div>
+  </div>
 '''
 

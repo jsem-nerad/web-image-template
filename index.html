@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Poster Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Custom Poster Generator</h1>
+            <p class="subtitle">Upload your image to place it on the poster</p>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider"></div>
+                </label>
+                <em>Dark Mode</em>
+            </div>
+        </header>
+
+        <main>
+            <div class="upload-section">
+                <div class="upload-container">
+                    <label for="imageUpload" class="upload-label">
+                        <span class="upload-icon">📁</span>
+                        <span class="upload-text">Choose an image</span>
+                    </label>
+                    <input type="file" id="imageUpload" accept="image/*">
+                    <p class="file-name" id="fileName">No file chosen</p>
+                </div>
+                <button id="saveButton" class="save-button">
+                    <span class="button-icon">💾</span>
+                    <span class="button-text">Save Result</span>
+                </button>
+            </div>
+
+            <div class="preview-section">
+                <div class="canvas-container" id="canvasContainer">
+                    <canvas id="resultCanvas"></canvas>
+                    <div class="loading-spinner" id="loadingSpinner">
+                        <div class="spinner"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Created with ❤️ | <a href="#" id="aboutLink">About this tool</a></p>
+        </footer>
+
+        <div class="modal" id="aboutModal">
+            <div class="modal-content">
+                <span class="close-button" id="closeModal">&times;</span>
+                <h2>About This Tool</h2>
+                <p>This tool allows you to upload any image and see it placed on the poster in the scene. The image will be automatically adjusted to match the perspective of the poster.</p>
+                <p>Simply upload your image using the button above, and download the result when you're happy with it!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

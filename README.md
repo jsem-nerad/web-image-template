@@ -25,22 +25,26 @@ There are 4 predefined points on the base image, that are the corners of the pos
 ## Using as a template
 To use this in your code, you will need the wis.js file. Then, put those things into your html file:
 
-'''xml
-  <button id="saveButton" class="save-button">
-      <span class="button-text">Save Result</span>
-  </button>
-'''
-'''xml
-  <input type="file" id="imageUpload" accept="image/*">
-  <p class="file-name" id="fileName">No file chosen</p>
-'''
 
-'''xml
-  <div class="canvas-container" id="canvasContainer">
-      <canvas id="resultCanvas"></canvas>
-      <div class="loading-spinner" id="loadingSpinner">
-          <div class="spinner"></div>
-      </div>
-  </div>
-'''
+```html
+<button id="saveButton" class="save-button">
+    <span class="button-text">Save Result</span>
+</button>
+```
+
+
+```html
+<input type="file" id="imageUpload" accept="image/*">
+<p class="file-name" id="fileName">No file chosen</p>
+```
+
+
+```html
+<div class="canvas-container" id="canvasContainer">
+    <canvas id="resultCanvas"></canvas>
+    <div class="loading-spinner" id="loadingSpinner">
+        <div class="spinner"></div>
+    </div>
+</div>
+```
 

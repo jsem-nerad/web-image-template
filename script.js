@@ -28,3 +28,25 @@ themeToggle.addEventListener('click', function() {
         themeIcon.textContent = '☀️';
     }
 });
+
+
+
+const aboutLink = document.getElementById('aboutLink');
+const aboutModal = document.getElementById('aboutModal');
+const closeModal = document.getElementById('closeModal');
+
+// Modal functionality
+aboutLink.addEventListener('click', function(e) {
+    e.preventDefault();
+    aboutModal.style.display = 'flex';
+});
+
+closeModal.addEventListener('click', function() {
+    aboutModal.style.display = 'none';
+});
+
+window.addEventListener('click', function(e) {
+    if (e.target === aboutModal) {
+        aboutModal.style.display = 'none';
+    }
+});

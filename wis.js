@@ -6,20 +6,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const saveButton = document.getElementById('saveButton');
     const loadingSpinner = document.getElementById('loadingSpinner');
     const fileName = document.getElementById('fileName');
-    const aboutLink = document.getElementById('aboutLink');
-    const aboutModal = document.getElementById('aboutModal');
-    const closeModal = document.getElementById('closeModal');
     
     // Hide loading spinner initially
     loadingSpinner.style.display = 'none';
     
-    // Background image path
     const backgroundImagePath = 'images/scene-with-poster.jpg';
-    // Default poster image path
     const defaultPosterImagePath = 'images/default-poster.jpg';
     
-    // Define the four corners of the poster in the background image
-
+    // Change those values when using as wis.js library
     const posterCorners = {
         topLeft: [1332, 565],
         topRight: [2500, 522],
@@ -50,21 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Modal functionality
-    aboutLink.addEventListener('click', function(e) {
-        e.preventDefault();
-        aboutModal.style.display = 'flex';
-    });
     
-    closeModal.addEventListener('click', function() {
-        aboutModal.style.display = 'none';
-    });
-    
-    window.addEventListener('click', function(e) {
-        if (e.target === aboutModal) {
-            aboutModal.style.display = 'none';
-        }
-    });
     
     function loadImages() {
         // Load the background image

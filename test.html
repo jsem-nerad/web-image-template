@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="saveButton" class="save-button">
+        <span class="button-text">Save Result</span>
+    </button>
+    <input type="file" id="imageUpload" accept="image/*">
+    <p class="file-name" id="fileName">No file chosen</p>
+    <div class="canvas-container" id="canvasContainer">
+        <canvas id="resultCanvas"></canvas>
+        <div class="loading-spinner" id="loadingSpinner">
+            <div class="spinner"></div>
+        </div>
+    </div>
+    <script src="wis.js"></script>
+</body>
+</html>

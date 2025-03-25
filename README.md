@@ -26,6 +26,7 @@ There are 4 predefined points on the base image that are the corners of the post
 To use this in your code, you will need the wis.js file. Then, put those things into your html file:
 
 
+The save button:
 ```html
 <button id="saveButton" class="save-button">
     <span class="button-text">Save Result</span>
@@ -33,12 +34,19 @@ To use this in your code, you will need the wis.js file. Then, put those things 
 ```
 
 
+File input:
 ```html
 <input type="file" id="imageUpload" accept="image/*">
+```
+
+
+File name text:
+```html
 <p class="file-name" id="fileName">No file chosen</p>
 ```
 
 
+Canvas with loading spinner:
 ```html
 <div class="canvas-container" id="canvasContainer">
     <canvas id="resultCanvas"></canvas>
@@ -46,5 +54,38 @@ To use this in your code, you will need the wis.js file. Then, put those things 
         <div class="spinner"></div>
     </div>
 </div>
+```
+
+
+Loading spinner CSS:
+```css
+.loading-spinner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(var(--background-color-rgb, 248, 249, 250), 0.8);
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(var(--primary-color-rgb, 67, 97, 238), 0.2);
+    border-radius: 50%;
+    border-top-color: var(--primary-color);
+    animation: spin 1s linear infinite;
+    transition: border-color 0.3s ease;
+}
+```
+
+
+And finally the `wis.js` script at the end:
+```html
+<script src="https://raw.githubusercontent.com/jsem-nerad/wis.js/refs/heads/main/wis.js"></script>
 ```
 

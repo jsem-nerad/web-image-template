@@ -84,8 +84,17 @@ Loading spinner CSS:
 ```
 
 
-And finally the `wis.js` script at the end:
+And finally the [`wis.js`](https://raw.githubusercontent.com/jsem-nerad/wis.js/refs/heads/main/wis.js) script at the end (you can download it [here](https://raw.githubusercontent.com/jsem-nerad/wis.js/refs/heads/main/wis.js)):
 ```html
-<script src="https://raw.githubusercontent.com/jsem-nerad/wis.js/refs/heads/main/wis.js"></script>
+<script src="wis.js"></script>
 ```
 
+Remember to edit your four custom corner points of the picture in the `wis.js` file (replace x and y with the actual positions):
+```JavaScript
+const posterCorners = {
+    topLeft: [x, y],
+    topRight: [x, y],
+    bottomRight: [x, y],
+    bottomLeft: [x, y]
+};
+```

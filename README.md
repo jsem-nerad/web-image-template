@@ -84,7 +84,7 @@ Loading spinner CSS:
 ```
 
 
-And finally the [`wis.js`](https://raw.githubusercontent.com/jsem-nerad/wis.js/refs/heads/main/wis.js) script at the end (you can download it [here](https://raw.githubusercontent.com/jsem-nerad/wis.js/refs/heads/main/wis.js)):
+And finally the [`wis.js`](https://github.com/jsem-nerad/wis.js/blob/main/wis.js) script at the end (you can download it [here](https://github.com/jsem-nerad/wis.js/blob/main/wis.js)):
 ```html
 <script src="wis.js"></script>
 ```

@@ -1,10 +1,10 @@
-<h1 align="center" style="font-size: 40px">Web Image Scaling in JavaScript</h1>
+<h1 align="center" style="font-size: 40px">wis.js</h1>
 
 
   <p align="center">
-    <img src="https://raw.githubusercontent.com/jsem-nerad/wis.js/refs/heads/main/images/icon.png" style="width: 30%; height: auto;">
+    <img src="https://raw.githubusercontent.com/jsem-nerad/wis.js/refs/heads/main/images/icon.png" style="width: 40%; height: auto;">
     <br />
-    A 
+    Web Image Scaling in JavaScript
     <br />
     <br />
     <a href="https://github.com/jsem-nerad/wis.js/issues/new?labels=bug&template=bug-report---.md">Report a Bug</a>

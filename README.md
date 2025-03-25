@@ -68,16 +68,16 @@ Loading spinner CSS:
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(var(--background-color-rgb, 248, 249, 250), 0.8);
+    background-color: rgba(248, 249, 250, 0.8);
     z-index: 10;
     transition: background-color 0.3s ease;
 }
 .spinner {
     width: 50px;
     height: 50px;
-    border: 5px solid rgba(var(--primary-color-rgb, 67, 97, 238), 0.2);
+    border: 5px solid rgba(67, 97, 238, 0.2);
     border-radius: 50%;
-    border-top-color: var(--primary-color);
+    border-top-color: rgba(67, 97, 238, 0.2);
     animation: spin 1s linear infinite;
     transition: border-color 0.3s ease;
 }
